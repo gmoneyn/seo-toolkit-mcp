@@ -1,0 +1,49 @@
+{
+  "name": "seo-toolkit-mcp",
+  "version": "1.0.3",
+  "description": "SEO toolkit MCP server — analyze meta tags, robots.txt, sitemaps, keyword density, readability, and heading structure",
+  "type": "module",
+  "bin": {
+    "seo-toolkit-mcp": "dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "mcp",
+    "seo",
+    "meta-tags",
+    "robots-txt",
+    "sitemap",
+    "keyword-density",
+    "readability",
+    "heading-structure",
+    "ai-tools"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gmoneyn/seo-toolkit-mcp"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
